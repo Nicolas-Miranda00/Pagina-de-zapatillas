@@ -4,13 +4,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -20px;
-    height: 20px;
+    padding: 10px;
     margin: 0;
 }
 
+
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer abajo */
+main {
+    flex: 1;
 }
 
 #imageneslogan {
@@ -19,10 +27,41 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100px;
+    height: 20vh;
 }
 
 h1 {
     text-align: center;
+}
 
+#inf1 {
+    margin: 10px;
+    border: 2px black solid;
+}
+
+/*  footer */
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+/*  imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MEDIA QUERY para celular */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #imageneslogan {
+        height: 15vh;
+    }
+
+    #inf1 {
+        margin: 8px;
+    }
 }
