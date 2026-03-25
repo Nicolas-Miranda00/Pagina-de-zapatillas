@@ -1,67 +1,46 @@
-#ofertas {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+/* Reset TOTAL */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
+/* Body */
 body {
-    margin: 0;
+    font-family: Arial, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* footer abajo */
+/* Header SIN espacios */
+header {
+    width: 100%;
+}
+
+/* Logo pegado a los bordes */
+#logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Título */
+h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Main */
 main {
     flex: 1;
-}
-
-#imageneslogan {
-    background-image: url("../imagenes/logo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 20vh;
 }
 
-h1 {
-    text-align: center;
-}
-
-#inf1 {
-    margin: 10px;
-    border: 2px black solid;
-}
-
-/*  footer */
+/* Footer */
 footer {
     width: 100%;
     text-align: center;
-}
-
-/*  imágenes */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* MEDIA QUERY para celular */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 20px;
-    }
-
-    #imageneslogan {
-        height: 15vh;
-    }
-
-    #inf1 {
-        margin: 8px;
-    }
+    padding: 10px;
 }
